@@ -1,24 +1,14 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
-importers:
+specifiers:
+  '@types/express': ^4.17.17
+  nanoid: ^4.0.1
 
-  .:
-    specifiers: {}
+dependencies:
+  nanoid: 4.0.1
 
-  apps/api:
-    specifiers:
-      '@types/express': ^4.17.17
-    devDependencies:
-      '@types/express': 4.17.17
-
-  apps/backend:
-    specifiers:
-      '@types/express': ^4.17.17
-      nanoid: ^4.0.1
-    dependencies:
-      nanoid: 4.0.1
-    devDependencies:
-      '@types/express': 4.17.17
+devDependencies:
+  '@types/express': 4.17.17
 
 packages:
 
