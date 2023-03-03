@@ -6,6 +6,9 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^3.2.1",
+    "@graphql-codegen/schema-ast": "^3.0.1",
+    "@graphql-codegen/typescript-graphql-request": "^4.5.8",
+    "@graphql-codegen/typescript-operations": "^3.0.1",
     "@types/express": "^4.17.17",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
@@ -16,10 +19,10 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@graphql-codegen/schema-ast": "^3.0.1",
-    "@nhost/nhost-js": "^2.0.6",
     "gql": "^1.1.2",
     "graphql": "^16.6.0",
+    "graphql-request": "^5.2.0",
+    "graphql-tag": "^2.12.6",
     "nanoid": "^4.0.1"
   }
 }

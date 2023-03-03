@@ -1,4 +1,11 @@
 {
   "name": "@nhost-example",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "lage build",
+    "lint": "lage lint"
+  },
+  "devDependencies": {
+    "lage": "^2.1.0"
+  }
 }

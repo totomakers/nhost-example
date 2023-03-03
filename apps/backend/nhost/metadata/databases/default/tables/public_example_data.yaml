@@ -1,3 +1,13 @@
 table:
   name: example_data
   schema: public
+select_permissions:
+  - role: public
+    permission:
+      columns:
+        - id
+        - column_1
+        - column_2
+        - column_3
+        - column_4
+      filter: {}

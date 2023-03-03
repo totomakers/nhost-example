@@ -8,6 +8,10 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "import"],
   rules: {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { varsIgnorePattern: "GQL_*" },
+    ],
     "no-console": ["error", { allow: ["warn", "error"] }],
     "@typescript-eslint/explicit-function-return-type": "off",
   },

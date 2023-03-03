@@ -1,8 +1,8 @@
-import { gql } from "gql";
-import { nhost } from "./nhost/nhost-client";
+import { gql } from "graphql-request";
+import { graphqlClient } from "./graphql/graphql-client";
 import { routeHandler } from "./utils/router-handler";
 
-const exampleRequest = gql`
+const GQL_EXAMPLE_REQUEST = gql`
   query exampleRequest($limit: Int) {
     example_data(limit: $limit) {
       id
@@ -16,9 +16,9 @@ const exampleRequest = gql`
 
 export const callGraphqlClient = routeHandler(async (req, res) => {
   // Call graphql client to list all data
-  const resp = await nhost.graphql.request(exampleRequest, {
+  const resp = await graphqlClient.exampleRequest({
     limit: 2,
   });
 
-  res.status(200).send(resp.data);
+  res.status(200).send(resp.example_data);
 });

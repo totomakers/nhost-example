@@ -8,9 +8,18 @@ const config: CodegenConfig = {
       },
     },
   },
+  documents: ["src/**/*.ts", "functions/**/*.ts"],
   generates: {
     ["src/schema.graphql"]: {
       plugins: ["schema-ast"],
+    },
+
+    ["src/modules/graphql/sdk.ts"]: {
+      plugins: [
+        "typescript",
+        "typescript-operations",
+        "typescript-graphql-request",
+      ],
     },
   },
 };

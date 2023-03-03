@@ -1,0 +1,9 @@
+query Example {
+  example_data(limit: 1) {
+    id
+    column_1
+    column_2
+    column_3
+    column_4
+  }
+}

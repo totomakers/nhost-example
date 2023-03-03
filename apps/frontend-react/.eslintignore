@@ -1,0 +1,3 @@
+*.generated.tsx
+src/services/graphql/introspection-result.ts
+src/services/graphql/types.ts
